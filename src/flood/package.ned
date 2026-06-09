@@ -1,0 +1,2 @@
+@namespace(flood);
+package flood;

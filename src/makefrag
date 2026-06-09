@@ -1,0 +1,7 @@
+# Keep the linked binary inside $O (build/gcc-$MODE/).
+# By default opp_makemake also hardlinks it back into src/, which clutters the source tree.
+TARGET_FILES = $O/$(TARGET)
+
+# Force relink when the Zig static lib changes (opp_makemake doesn't track it).
+ZIG_LIB := stack/zig-out/lib/libslora.a
+$O/$(TARGET): $(ZIG_LIB)

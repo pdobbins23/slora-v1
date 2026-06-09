@@ -1,0 +1,12 @@
+.{
+    .name = .slora_tdma,
+    .version = "0.0.0",
+    .fingerprint = 0xe11c3bef74d6639,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
